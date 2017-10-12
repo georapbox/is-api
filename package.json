@@ -1,0 +1,27 @@
+{
+  "name": "is-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --colors ./test/*.spec.js",
+    "lint": "eslint src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georapbox/core-is.git"
+  },
+  "keywords": [],
+  "author": "George Raptis <georapbox@gmail.com> (georapbox.github.io)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/georapbox/core-is/issues"
+  },
+  "homepage": "https://github.com/georapbox/core-is#readme",
+  "devDependencies": {
+    "chai": "~4.1.2",
+    "eslint": "~4.8.0",
+    "mocha": "~4.0.1",
+    "nyc": "~11.2.1"
+  }
+}
