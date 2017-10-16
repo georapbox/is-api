@@ -65,7 +65,6 @@
         case 'not': is.not[method] = is.not(is[method]); break;
         case 'all': is.all[method] = is.all(is[method]); break;
         case 'any': is.any[method] = is.any(is[method]); break;
-        default: break;
       }
     }
   }
@@ -75,10 +74,8 @@
 
     for (prop in is) {
       if (hasOwnProperty.call(is, prop)) {
-        if (typeof is[prop] === 'function') {
-          if (interfaces.indexOf(prop) === -1 && publicMethods.indexOf(prop) === -1) {
-            makeInterface(prop);
-          }
+        if (interfaces.indexOf(prop) === -1 && publicMethods.indexOf(prop) === -1) {
+          makeInterface(prop);
         }
       }
     }
@@ -89,10 +86,14 @@
 
     for (prop in options) {
       if (hasOwnProperty.call(options, prop)) {
-        if (typeof options[prop] === 'function' && interfaces.indexOf(prop) === -1 && publicMethods.indexOf(prop) === -1) {
+        if (typeof options[prop] !== 'function') {
+          throw new TypeError('A function is expected to extend the API with.');
+        }
+
+        if (interfaces.indexOf(prop) === -1 && publicMethods.indexOf(prop) === -1) {
           is[prop] = options[prop];
         } else {
-          throw new Error(prop + ' is a reserved property from the library and cannot be overwritten');
+          throw new Error(prop + ' is a reserved property from the library and cannot be overwritten. Reserved words are: not, any, all, extend and noConflict.');
         }
       }
     }
@@ -100,6 +101,7 @@
     applyInterfaces();
   }
 
+  /* istanbul ignore next */
   function noConflict() {
     if (context) {
       context[name] = oldPublicAPI;

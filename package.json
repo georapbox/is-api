@@ -1,11 +1,14 @@
 {
   "name": "is-api",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Tiny javascript library that you can extend with your own type checking methods.",
-  "main": "index.js",
+  "main": "src/is.js",
   "scripts": {
     "test": "mocha --colors ./test/*.spec.js",
-    "lint": "eslint src/**/*.js"
+    "coverage": "nyc --reporter=text --reporter=lcov npm test",
+    "lint": "eslint src/**/*.js",
+    "build": "gulp build",
+    "prepublish": "npm test && npm run build"
   },
   "repository": {
     "type": "git",
@@ -20,7 +23,12 @@
   "homepage": "https://github.com/georapbox/is-api#readme",
   "devDependencies": {
     "chai": "~4.1.2",
-    "eslint": "~4.8.0",
+    "eslint": "~4.9.0",
+    "gulp": "~3.9.1",
+    "gulp-header": "~1.8.9",
+    "gulp-rename": "~1.2.2",
+    "gulp-sourcemaps": "~2.6.1",
+    "gulp-uglify": "~3.0.0",
     "mocha": "~4.0.1",
     "nyc": "~11.2.1"
   }

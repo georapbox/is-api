@@ -1,3 +1,13 @@
+[![Travis](https://img.shields.io/travis/georapbox/is-api/master.svg)](https://travis-ci.org/georapbox/is-api.svg?branch=master)
+[![npm version](https://img.shields.io/npm/v/is-api.svg)](http://badge.fury.io/js/is-api)
+[![npm downloads](https://img.shields.io/npm/dt/is-api.svg)](http://badge.fury.io/js/is-api)
+[![npm license](https://img.shields.io/npm/l/is-api.svg)](http://badge.fury.io/js/is-api)
+[![Code Climate](https://codeclimate.com/github/georapbox/is-api/badges/gpa.svg)](https://codeclimate.com/github/georapbox/is-api)
+[![Issue Count](https://codeclimate.com/github/georapbox/is-api/badges/issue_count.svg)](https://codeclimate.com/github/georapbox/is-api)
+[![Codecov](https://img.shields.io/codecov/c/github/georapbox/is-api/master.svg)](https://codecov.io/gh/georapbox/is-api)
+[![Dependencies](https://david-dm.org/georapbox/is-api.svg)](https://david-dm.org/georapbox/is-api)
+[![devDependency Status](https://david-dm.org/georapbox/is-api/dev-status.svg)](https://david-dm.org/georapbox/is-api#info=devDependencies)
+
 # is-api
 
 Inspired by the [is.js](http://is.js.org/) micro library, this is tiny javascript library that you can extend with your own type checking (and more) methods and benefit from the interfaces `not`, `all` and `any` the library provides with.
@@ -95,3 +105,7 @@ utils.is = is.noConflict();
 
 utils.is.extend({...});
 ```
+
+## License
+
+[The MIT License (MIT)](https://georapbox.mit-license.org/@2017)

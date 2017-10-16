@@ -3,7 +3,8 @@
     "browser": true,
     "node": true,
     "es6": false,
-    "amd": true
+    "amd": true,
+    "mocha": true
   },
   "parserOptions": {},
   "globals": {},
@@ -109,7 +110,7 @@
     "curly": 1,
 
     // require default cases in switch statements
-    "default-case": 1,
+    "default-case": 0,
 
     // enforce consistent newlines before and after dots
     "dot-notation": 1,
