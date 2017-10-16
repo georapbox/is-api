@@ -1,6 +1,6 @@
 # is-api
 
-Inspired by the [is.js](http://is.js.org/) micro library, this is tiny library that you can extend with your own type checking (and more) methods and benefit from the interfaces `not`, `all` and `any` the library provides with.
+Inspired by the [is.js](http://is.js.org/) micro library, this is tiny javascript library that you can extend with your own type checking (and more) methods and benefit from the interfaces `not`, `all` and `any` the library provides with.
 
 By default, the library is "naked". Use the `extend()` method to provide it with your own type checking methods.
 

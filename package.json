@@ -1,7 +1,7 @@
 {
   "name": "is-api",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Tiny javascript library that you can extend with your own type checking methods.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --colors ./test/*.spec.js",
