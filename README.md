@@ -1,4 +1,4 @@
-[![Travis](https://img.shields.io/travis/georapbox/is-api/master.svg)](https://travis-ci.org/georapbox/is-api.svg?branch=master)
+[![Build Status](https://travis-ci.com/georapbox/is-api.svg?branch=master)](https://travis-ci.com/georapbox/is-api)
 [![npm version](https://img.shields.io/npm/v/is-api.svg)](http://badge.fury.io/js/is-api)
 [![npm downloads](https://img.shields.io/npm/dt/is-api.svg)](http://badge.fury.io/js/is-api)
 [![npm license](https://img.shields.io/npm/l/is-api.svg)](http://badge.fury.io/js/is-api)
