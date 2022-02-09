@@ -5,8 +5,6 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/128b396dd2c5ddeec986/maintainability)](https://codeclimate.com/github/georapbox/is-api/maintainability)
 [![Issue Count](https://codeclimate.com/github/georapbox/is-api/badges/issue_count.svg)](https://codeclimate.com/github/georapbox/is-api)
 [![Codecov](https://img.shields.io/codecov/c/github/georapbox/is-api/master.svg)](https://codecov.io/gh/georapbox/is-api)
-[![Dependencies](https://david-dm.org/georapbox/is-api.svg)](https://david-dm.org/georapbox/is-api)
-[![devDependency Status](https://david-dm.org/georapbox/is-api/dev-status.svg)](https://david-dm.org/georapbox/is-api#info=devDependencies)
 
 # is-api
 
